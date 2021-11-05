@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/avionactivity/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="./tribute.css">
+    <title>Tribute Page</title>
+</head>
+<body>
+    <main>
+        <img class="main-pic" src="/avionactivity/assets/pic2.jpg">
+        <h1 class="title">Eraserheads</h1>
+        <div class="text">
+            <p><span class="bold">Eraserheads</span> (also known as Eheads or 'Heads), sometimes stylized as <span class="bold">ERASƎRHEADS</span>
+                was a Filipino rock band formed by Ely Buendia, Raimund Marasigan, Buddy Zabala and Marcus Adoro. Eheads gained prominence during the 1990s, becoming one of the 
+                most influential acts in OPM (Original Pinoy Music).            
+            <br><br>
+
+            Formed in 1989, Eraserheads' success is credited in introducing a wave of Manila bands during the 1990s and early 2000s, and their enduring 
+                influence helped more alternative rock bands to achieve mainstream success in the country. The band released several singles, albums, and EPs that reached number one.
+            
+            <br><br><br>
+            Here is the list of their studio albums and a song from that album:
+        </p>
+        <ul class="bold">
+            <li><a href="https://en.wikipedia.org/wiki/Ultraelectromagneticpop!" target="_blank">Ultraelectromagneticpop!(1993)</a></li><br> <button id="play" onclick="sing1()"><i class="fas fa-play"></i> <i class="fas fa-pause"></i></button><br><br>
+            
+            <audio id="pareko">
+                <source src="/avionactivity/assets/Pare Ko by Eraserheads with lyrics.mp3" type="audio/mpeg">
+            </audio>
+            <li><a href="https://en.wikipedia.org/wiki/Circus_(Eraserheads_album)" target="_blank">Circus(1994)</a></li><br><button id="play" onclick="sing2()"><i class="fas fa-play"></i> <i class="fas fa-pause"></i></button><br><br>
+            
+            <audio id="alapaap">
+                <source src="/avionactivity/assets/Alapaap - Eraserheads (HD Lyrics).mp3" type="audio/mpeg">
+            </audio>
+
+            <li><a href="https://en.wikipedia.org/wiki/Cutterpillow" target="_blank">Cutterpillow(1995)</a></li><br><button id="play" onclick="sing3()"><i class="fas fa-play"></i> <i class="fas fa-pause"></i></button><br><br>
+            <audio id="huling">
+                <source src="/avionactivity/assets/Ang Huling El Bimbo - Eraserheads (Lyrics).mp3" type="audio/mpeg">
+            </audio>
+
+            <li><a href="https://en.wikipedia.org/wiki/Fruitcake_(album)" target="_blank">Fruitcake(1996)</a></li><br><button id="play" onclick="sing4()"><i class="fas fa-play"></i> <i class="fas fa-pause"></i></button><br><br>
+            <audio id="fruit">
+                <source src="/avionactivity/assets/Fruitcake.mp3" type="audio/mpeg">
+            </audio>
+
+            <li><a href="https://en.wikipedia.org/wiki/Sticker_Happy" target="_blank">Sticker Happy(1997)</a></li><br><button id="play" onclick="sing5()"><i class="fas fa-play"></i> <i class="fas fa-pause"></i></button><br><br>
+            <audio id="hard">
+                <source src="/avionactivity/assets/HARD TO BELIEVE - ERASERHEADS with lyrics.mp3" type="audio/mpeg">
+            </audio>
+
+            <li><a href="https://en.wikipedia.org/wiki/Natin99" target="_blank">Natin99(1999)</a></li><br><button id="play" onclick="sing6()"><i class="fas fa-play"></i> <i class="fas fa-pause"></i></button><br><br>
+            <audio id="maselan">
+                <source src="/avionactivity/assets/Eraserheads - Maselang Bahaghari (Lyrics).mp3" type="audio/mpeg">
+            </audio>
+
+            <li><a href="https://en.wikipedia.org/wiki/Carbon_Stereoxide" target="_blank">Carbon Stereoxide(2001)</a></li><br><button id="play" onclick="sing7()"><i class="fas fa-play"></i> <i class="fas fa-pause"></i></button>
+            <audio id="maskara">
+                <source src="/avionactivity/assets/maskara by eraserheads lyrics.mp3" type="audio/mpeg">
+            </audio>
+        </ul><br><hr>
+
+        
+
+        <p>Their diversed music worked both in the underground and mainstream scenes of the Philippine music industry. By fusing different musical styles 
+            such as alternative, pop, rock, reggae, and synthpop, Eraserheads helped change the sound of Pinoy rock.</p>
+
+            <p class="source"><a href="https://www.last.fm/music/Eraserheads/+wiki" target="_blank">Source</a></p>
+
+        </div>
+        
+        
+    </main>
+</body>
+<script>
+    var awit1 = document.getElementById('pareko');
+    var awit2 = document.getElementById('alapaap');
+    var awit3 = document.getElementById('huling');
+    var awit4 = document.getElementById('fruit');
+    var awit5 = document.getElementById('hard');
+    var awit6 = document.getElementById('maselan');
+    var awit7 = document.getElementById('maskara');
+    var count = 0;
+
+    function sing1() {   
+        
+     if (count == 0) {
+        count = 1;
+        awit1.play();
+     } else {
+         count = 0;
+         awit1.pause();
+     }
+    }
+
+    function sing2() {   
+        
+        if (count == 0) {
+           count = 1;
+           awit2.play();
+        } else {
+            count = 0;
+            awit2.pause();
+        }
+       }
+
+       function sing3() {   
+        
+        if (count == 0) {
+           count = 1;
+           awit3.play();
+        } else {
+            count = 0;
+            awit3.pause();
+        }
+       }
+       function sing4() {   
+        
+        if (count == 0) {
+           count = 1;
+           awit4.play();
+        } else {
+            count = 0;
+            awit4.pause();
+        }
+       }
+       function sing5() {   
+        
+        if (count == 0) {
+           count = 1;
+           awit5.play();
+        } else {
+            count = 0;
+            awit5.pause();
+        }
+       }
+       function sing6() {   
+        
+        if (count == 0) {
+           count = 1;
+           awit6.play();
+        } else {
+            count = 0;
+            awit6.pause();
+        }
+       }            
+    
+       function sing7() {   
+        
+        if (count == 0) {
+           count = 1;
+           awit7.play();
+        } else {
+            count = 0;
+            awit7.pause();
+        }
+       }
+</script>
+</html>
